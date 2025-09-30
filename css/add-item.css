@@ -6,14 +6,17 @@
 }
 
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  background: url('../image/market2.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;  /* Light color for better contrast */
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 
 /* Header */
 header {
@@ -57,7 +60,7 @@ main h2 {
 
 /* Form Styling */
 form {
-  background: white;
+  background: rgba(128, 128, 128, 0.089);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -87,7 +90,7 @@ form textarea:focus {
 }
 
 form button {
-  background: #f39c12;
+  background: blue;
   color: white;
   padding: 0.75rem;
   border: none;
@@ -109,28 +112,4 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: auto;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header nav {
-    margin-top: 0.5rem;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  form {
-    padding: 1.5rem;
-  }
-
-  main h2 {
-    font-size: 1.5rem;
-  }
 }
