@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeMarket - Add Item</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>FreeMarket</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="add-item.html">Add Item</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Add Item Form -->
+  <main>
+    <h2>Add a New Item</h2>
+    <form id="addItemForm">
+      <label for="title">Item Title</label>
+      <input type="text" id="title" required>
+
+      <label for="price">Price ($)</label>
+      <input type="number" id="price" required>
+
+      <label for="description">Description</label>
+      <textarea id="description" rows="4" required></textarea>
+
+      <label for="image">Image URL</label>
+      <input type="url" id="image" placeholder="https://example.com/item.jpg">
+
+      <button type="submit">Add Item</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FreeMarket. All rights reserved.</p>
+  </footer>
+
+  <script src="js/add-item.js"></script>
+</body>
+</html>
