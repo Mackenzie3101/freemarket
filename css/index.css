@@ -6,13 +6,17 @@
 }
 
 body {
-  background-image: url('image/market.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 1500px;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('../image/market.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;  /* Light color for better contrast */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 
 /* Header */
 header {
